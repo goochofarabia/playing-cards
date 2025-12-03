@@ -24,7 +24,7 @@
   background-color: #eee;
   display: flex;
   flex-flow: row wrap;
-  word-break: break-all;
+  justify-content: center;
   width: 30px;
   height: 80px;
   padding: 5px;
@@ -34,19 +34,35 @@
 }
 
 .middle {
-  display: flex;
-  width: 20px;
-  height: 20px;
+  box-sizing: border-box;
+  width: 32px;
+  height: 120px;
   border: solid 2px #333;
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-self: center;
+  font-size: 50px;
 }
 
 .right {
-  width: 20px;
-  height: 20px;
+  box-sizing: border-box;
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  word-break: break-all;
+  transform: rotate(180deg);
+  width: 30px;
+  height: 80px;
+  padding: 5px;
   border: solid 2px #333;
   align-self: flex-end;
-  text-align: center;
+  font-size: 30px;
 }
 
+.middle .bottom {
+  transform: rotate(180deg)
+}
 
