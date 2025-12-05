@@ -20,25 +20,20 @@
 }
 
 .left {
-  box-sizing: border-box;
-  background-color: #eee;
   display: flex;
   flex-flow: row wrap;
+  word-break: break-all;
   justify-content: center;
   width: 30px;
   height: 80px;
   padding: 5px;
-  border: solid 2px #333;
   align-self: flex-start;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .middle {
-  box-sizing: border-box;
   width: 32px;
   height: 120px;
-  border: solid 2px #333;
-  background-color: #eee;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -47,22 +42,22 @@
 }
 
 .right {
-  box-sizing: border-box;
-  background-color: #eee;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row-wrap;
   word-break: break-all;
-  transform: rotate(180deg);
   width: 30px;
   height: 80px;
   padding: 5px;
-  border: solid 2px #333;
   align-self: flex-end;
-  font-size: 30px;
+  font-size: 35px;
+  transform: rotate(180deg);
 }
 
 .middle .bottom {
   transform: rotate(180deg)
+}
+
+.hearts {
+  color: red;
 }
 
