@@ -1,3 +1,6 @@
+/* add "justify-content: column" to ".middle" class and adjust accordingly */
+
+
 #playing-cards {
   display: flex;
   flex-flow: row wrap;
@@ -38,7 +41,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-self: center;
-  font-size: 50px;
+  font-size: 65px;
+  transform: translate(0, -20px);
 }
 
 .right {
@@ -53,11 +57,16 @@
   transform: rotate(180deg);
 }
 
-.middle .bottom {
+.bottom {
   transform: rotate(180deg)
 }
 
 .hearts {
   color: red;
 }
+.top.hearts {
+  transform: translate(0,40px);
+}
+
+
 
